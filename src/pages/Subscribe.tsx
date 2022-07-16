@@ -1,6 +1,7 @@
 import { gql, useMutation } from "@apollo/client";
 import { useState, FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
+import { CodeMockup } from "../components/CodeMockup";
 import { Logo } from "../components/Logo";
 import { useCreateSubscriberMutation } from "../graphql/generated";
 
@@ -69,7 +70,7 @@ export function Subscribe() {
         </div>
       </div>
       <div className="mt-10">
-        <img src="/src/assets/code-mockup.png" alt="" />
+        <CodeMockup />
       </div>
     </div>
   )
